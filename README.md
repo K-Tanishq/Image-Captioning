@@ -1,9 +1,9 @@
-# (Image Captioning for Visually Impaired Individuals)
+# Image Captioning
 
 # Problem Statement
-Image captioning for the visually impaired is a significant issue that needs attention. It involves generating descriptions for images understandably and accurately. This task is crucial to aid visually impaired individuals in interpreting and understanding visual content. Despite advancements in technology, creating precise and contextually appropriate captions remains a challenging task. My project aims to address this problem and develop an efficient solution that can generate accurate and meaningful captions for images, thereby enhancing the experience for visually impaired individuals.
+Image captioning is a significant issue that needs attention. It involves generating descriptions for images understandably and accurately. Despite advancements in technology, creating precise and contextually appropriate captions remains a challenging task. My project aims to address this problem and develop an efficient solution that can generate accurate and meaningful captions for images.
 
-The main focus of my project is to generate an interpretable and meaningful set of captions for real-life images. I have also converted the generated captions to audio for the visually impaired to listen to.
+The main focus of my project is to generate an interpretable and meaningful set of captions for real-life images.
 
 # Motivation and Experiments Performed Before the Final Solution
 ### 1. General Method Towards the problem
@@ -27,7 +27,7 @@ Now to improve the above-defined architecture I tried to use a better image repr
 
 So, to get the image embeddings or (latent embeddings) for image captioning I trained the VAE as my encoder-CNN and its reparameterization trick allows me to get better embeddings because of the continuous nature of its latent space. I used these embeddings and added them to the text embeddings to get total embeddings from which I generated my captions of the image.
 
-https://github.com/K-Tanishq/Image-Captioning/issues/1#issuecomment-2105057991
+![qwerty drawio (1)](https://github.com/K-Tanishq/Image-Captioning/assets/169484818/83ecc7e8-837e-4f90-9f7c-493304e5c110)
 
 ### 4. Use of GAN’s Intuition
 As soon as I think of a generation task, the first thing that pops up in my mind is GANs or (Generative Adversarial Networks). Hence I tried to make a generator model that would help me do the same task by just taking the image and generating labels. But, I didn’t quite succeed here since the discriminator overpowered every generator model that I could think of.
